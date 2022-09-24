@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDE2F1C428DED1840057B554 /* KodaboveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2F1C328DED1840057B554 /* KodaboveApp.swift */; };
+		BDE2F1C628DED1840057B554 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2F1C528DED1840057B554 /* ContentView.swift */; };
+		BDE2F1C828DED1890057B554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE2F1C728DED1890057B554 /* Assets.xcassets */; };
+		BDE2F1CC28DED1890057B554 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE2F1CB28DED1890057B554 /* Preview Assets.xcassets */; };
+		BDE2F1D628DED18A0057B554 /* KodaboveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2F1D528DED18A0057B554 /* KodaboveTests.swift */; };
+		BDE2F1E028DED18A0057B554 /* KodaboveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2F1DF28DED18A0057B554 /* KodaboveUITests.swift */; };
+		BDE2F1E228DED18A0057B554 /* KodaboveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2F1E128DED18A0057B554 /* KodaboveUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDE2F1D228DED18A0057B554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDE2F1B828DED1840057B554 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDE2F1BF28DED1840057B554;
+			remoteInfo = Kodabove;
+		};
+		BDE2F1DC28DED18A0057B554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDE2F1B828DED1840057B554 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDE2F1BF28DED1840057B554;
+			remoteInfo = Kodabove;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDE2F1C028DED1840057B554 /* Kodabove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kodabove.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE2F1C328DED1840057B554 /* KodaboveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodaboveApp.swift; sourceTree = "<group>"; };
+		BDE2F1C528DED1840057B554 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BDE2F1C728DED1890057B554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDE2F1C928DED1890057B554 /* Kodabove.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kodabove.entitlements; sourceTree = "<group>"; };
+		BDE2F1CB28DED1890057B554 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BDE2F1D128DED18A0057B554 /* KodaboveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KodaboveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE2F1D528DED18A0057B554 /* KodaboveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodaboveTests.swift; sourceTree = "<group>"; };
+		BDE2F1DB28DED18A0057B554 /* KodaboveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KodaboveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE2F1DF28DED18A0057B554 /* KodaboveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodaboveUITests.swift; sourceTree = "<group>"; };
+		BDE2F1E128DED18A0057B554 /* KodaboveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodaboveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDE2F1BD28DED1840057B554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE2F1CE28DED1890057B554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE2F1D828DED18A0057B554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDE2F1B728DED1840057B554 = {
+			isa = PBXGroup;
+			children = (
+				BDE2F1C228DED1840057B554 /* Kodabove */,
+				BDE2F1D428DED18A0057B554 /* KodaboveTests */,
+				BDE2F1DE28DED18A0057B554 /* KodaboveUITests */,
+				BDE2F1C128DED1840057B554 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDE2F1C128DED1840057B554 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDE2F1C028DED1840057B554 /* Kodabove.app */,
+				BDE2F1D128DED18A0057B554 /* KodaboveTests.xctest */,
+				BDE2F1DB28DED18A0057B554 /* KodaboveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDE2F1C228DED1840057B554 /* Kodabove */ = {
+			isa = PBXGroup;
+			children = (
+				BDE2F1C328DED1840057B554 /* KodaboveApp.swift */,
+				BDE2F1C528DED1840057B554 /* ContentView.swift */,
+				BDE2F1C728DED1890057B554 /* Assets.xcassets */,
+				BDE2F1C928DED1890057B554 /* Kodabove.entitlements */,
+				BDE2F1CA28DED1890057B554 /* Preview Content */,
+			);
+			path = Kodabove;
+			sourceTree = "<group>";
+		};
+		BDE2F1CA28DED1890057B554 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BDE2F1CB28DED1890057B554 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BDE2F1D428DED18A0057B554 /* KodaboveTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDE2F1D528DED18A0057B554 /* KodaboveTests.swift */,
+			);
+			path = KodaboveTests;
+			sourceTree = "<group>";
+		};
+		BDE2F1DE28DED18A0057B554 /* KodaboveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDE2F1DF28DED18A0057B554 /* KodaboveUITests.swift */,
+				BDE2F1E128DED18A0057B554 /* KodaboveUITestsLaunchTests.swift */,
+			);
+			path = KodaboveUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDE2F1BF28DED1840057B554 /* Kodabove */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE2F1E528DED18A0057B554 /* Build configuration list for PBXNativeTarget "Kodabove" */;
+			buildPhases = (
+				BDE2F1BC28DED1840057B554 /* Sources */,
+				BDE2F1BD28DED1840057B554 /* Frameworks */,
+				BDE2F1BE28DED1840057B554 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kodabove;
+			productName = Kodabove;
+			productReference = BDE2F1C028DED1840057B554 /* Kodabove.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDE2F1D028DED1890057B554 /* KodaboveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE2F1E828DED18A0057B554 /* Build configuration list for PBXNativeTarget "KodaboveTests" */;
+			buildPhases = (
+				BDE2F1CD28DED1890057B554 /* Sources */,
+				BDE2F1CE28DED1890057B554 /* Frameworks */,
+				BDE2F1CF28DED1890057B554 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDE2F1D328DED18A0057B554 /* PBXTargetDependency */,
+			);
+			name = KodaboveTests;
+			productName = KodaboveTests;
+			productReference = BDE2F1D128DED18A0057B554 /* KodaboveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDE2F1DA28DED18A0057B554 /* KodaboveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE2F1EB28DED18A0057B554 /* Build configuration list for PBXNativeTarget "KodaboveUITests" */;
+			buildPhases = (
+				BDE2F1D728DED18A0057B554 /* Sources */,
+				BDE2F1D828DED18A0057B554 /* Frameworks */,
+				BDE2F1D928DED18A0057B554 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDE2F1DD28DED18A0057B554 /* PBXTargetDependency */,
+			);
+			name = KodaboveUITests;
+			productName = KodaboveUITests;
+			productReference = BDE2F1DB28DED18A0057B554 /* KodaboveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDE2F1B828DED1840057B554 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					BDE2F1BF28DED1840057B554 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					BDE2F1D028DED1890057B554 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = BDE2F1BF28DED1840057B554;
+					};
+					BDE2F1DA28DED18A0057B554 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = BDE2F1BF28DED1840057B554;
+					};
+				};
+			};
+			buildConfigurationList = BDE2F1BB28DED1840057B554 /* Build configuration list for PBXProject "Kodabove" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDE2F1B728DED1840057B554;
+			productRefGroup = BDE2F1C128DED1840057B554 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDE2F1BF28DED1840057B554 /* Kodabove */,
+				BDE2F1D028DED1890057B554 /* KodaboveTests */,
+				BDE2F1DA28DED18A0057B554 /* KodaboveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDE2F1BE28DED1840057B554 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE2F1CC28DED1890057B554 /* Preview Assets.xcassets in Resources */,
+				BDE2F1C828DED1890057B554 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE2F1CF28DED1890057B554 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE2F1D928DED18A0057B554 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDE2F1BC28DED1840057B554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE2F1C628DED1840057B554 /* ContentView.swift in Sources */,
+				BDE2F1C428DED1840057B554 /* KodaboveApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE2F1CD28DED1890057B554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE2F1D628DED18A0057B554 /* KodaboveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE2F1D728DED18A0057B554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE2F1E228DED18A0057B554 /* KodaboveUITestsLaunchTests.swift in Sources */,
+				BDE2F1E028DED18A0057B554 /* KodaboveUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDE2F1D328DED18A0057B554 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDE2F1BF28DED1840057B554 /* Kodabove */;
+			targetProxy = BDE2F1D228DED18A0057B554 /* PBXContainerItemProxy */;
+		};
+		BDE2F1DD28DED18A0057B554 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDE2F1BF28DED1840057B554 /* Kodabove */;
+			targetProxy = BDE2F1DC28DED18A0057B554 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BDE2F1E328DED18A0057B554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDE2F1E428DED18A0057B554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BDE2F1E628DED18A0057B554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Kodabove/Kodabove.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kodabove/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lobemusonda.Kodabove;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDE2F1E728DED18A0057B554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Kodabove/Kodabove.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kodabove/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lobemusonda.Kodabove;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDE2F1E928DED18A0057B554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lobemusonda.KodaboveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kodabove.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kodabove";
+			};
+			name = Debug;
+		};
+		BDE2F1EA28DED18A0057B554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lobemusonda.KodaboveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kodabove.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kodabove";
+			};
+			name = Release;
+		};
+		BDE2F1EC28DED18A0057B554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lobemusonda.KodaboveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kodabove;
+			};
+			name = Debug;
+		};
+		BDE2F1ED28DED18A0057B554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lobemusonda.KodaboveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kodabove;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDE2F1BB28DED1840057B554 /* Build configuration list for PBXProject "Kodabove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE2F1E328DED18A0057B554 /* Debug */,
+				BDE2F1E428DED18A0057B554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDE2F1E528DED18A0057B554 /* Build configuration list for PBXNativeTarget "Kodabove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE2F1E628DED18A0057B554 /* Debug */,
+				BDE2F1E728DED18A0057B554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDE2F1E828DED18A0057B554 /* Build configuration list for PBXNativeTarget "KodaboveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE2F1E928DED18A0057B554 /* Debug */,
+				BDE2F1EA28DED18A0057B554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDE2F1EB28DED18A0057B554 /* Build configuration list for PBXNativeTarget "KodaboveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE2F1EC28DED18A0057B554 /* Debug */,
+				BDE2F1ED28DED18A0057B554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDE2F1B828DED1840057B554 /* Project object */;
+}
