@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDB3847428E02055000C3874 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3847328E02055000C3874 /* EventsView.swift */; };
+		BDB3847628E0208B000C3874 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3847528E0208B000C3874 /* ScheduleView.swift */; };
+		BDB3847828E0211A000C3874 /* EventItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3847728E0211A000C3874 /* EventItemView.swift */; };
+		BDB3847A28E02149000C3874 /* ScheduleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3847928E02149000C3874 /* ScheduleItemView.swift */; };
+		BDB3847E28E022D8000C3874 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3847D28E022D8000C3874 /* MainView.swift */; };
 		BDE2F1C428DED1840057B554 /* KodaboveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2F1C328DED1840057B554 /* KodaboveApp.swift */; };
 		BDE2F1C628DED1840057B554 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2F1C528DED1840057B554 /* ContentView.swift */; };
 		BDE2F1C828DED1890057B554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE2F1C728DED1890057B554 /* Assets.xcassets */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BDB3847328E02055000C3874 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		BDB3847528E0208B000C3874 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		BDB3847728E0211A000C3874 /* EventItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemView.swift; sourceTree = "<group>"; };
+		BDB3847928E02149000C3874 /* ScheduleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItemView.swift; sourceTree = "<group>"; };
+		BDB3847D28E022D8000C3874 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BDE2F1C028DED1840057B554 /* Kodabove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kodabove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE2F1C328DED1840057B554 /* KodaboveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodaboveApp.swift; sourceTree = "<group>"; };
 		BDE2F1C528DED1840057B554 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +82,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BDB3847028E01EFD000C3874 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				BDB3847228E01FCB000C3874 /* listItems */,
+				BDB3847128E01FAC000C3874 /* tabs */,
+				BDE2F1C528DED1840057B554 /* ContentView.swift */,
+				BDB3847D28E022D8000C3874 /* MainView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		BDB3847128E01FAC000C3874 /* tabs */ = {
+			isa = PBXGroup;
+			children = (
+				BDB3847328E02055000C3874 /* EventsView.swift */,
+				BDB3847528E0208B000C3874 /* ScheduleView.swift */,
+			);
+			path = tabs;
+			sourceTree = "<group>";
+		};
+		BDB3847228E01FCB000C3874 /* listItems */ = {
+			isa = PBXGroup;
+			children = (
+				BDB3847728E0211A000C3874 /* EventItemView.swift */,
+				BDB3847928E02149000C3874 /* ScheduleItemView.swift */,
+			);
+			path = listItems;
+			sourceTree = "<group>";
+		};
+		BDB3847B28E02194000C3874 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		BDB3847C28E021E8000C3874 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
 		BDE2F1B728DED1840057B554 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +148,10 @@
 		BDE2F1C228DED1840057B554 /* Kodabove */ = {
 			isa = PBXGroup;
 			children = (
+				BDB3847C28E021E8000C3874 /* controllers */,
+				BDB3847B28E02194000C3874 /* models */,
+				BDB3847028E01EFD000C3874 /* views */,
 				BDE2F1C328DED1840057B554 /* KodaboveApp.swift */,
-				BDE2F1C528DED1840057B554 /* ContentView.swift */,
 				BDE2F1C728DED1890057B554 /* Assets.xcassets */,
 				BDE2F1C928DED1890057B554 /* Kodabove.entitlements */,
 				BDE2F1CA28DED1890057B554 /* Preview Content */,
@@ -259,8 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDB3847A28E02149000C3874 /* ScheduleItemView.swift in Sources */,
+				BDB3847E28E022D8000C3874 /* MainView.swift in Sources */,
 				BDE2F1C628DED1840057B554 /* ContentView.swift in Sources */,
+				BDB3847628E0208B000C3874 /* ScheduleView.swift in Sources */,
+				BDB3847828E0211A000C3874 /* EventItemView.swift in Sources */,
 				BDE2F1C428DED1840057B554 /* KodaboveApp.swift in Sources */,
+				BDB3847428E02055000C3874 /* EventsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
