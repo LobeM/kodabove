@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct EventsView: View {
+    @State var events = [Event]()
+    
     var body: some View {
-        Text("Events Tab")
+        List(events) { event in
+            EventItem(event: event)
+        }
+        .onAppear {
+            apiCall().getEvents { (events) in
+                self.events = events
+            }
+        }
     }
 }
 
