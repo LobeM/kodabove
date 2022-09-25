@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import CachedAsyncImage
 
 struct ListImage: View {
     var imageUrl: String
     
     var body: some View {
-        AsyncImage(url: URL(string: imageUrl)){ phase in
+        CachedAsyncImage(url: URL(string: imageUrl)){ phase in
             if let image = phase.image {
                 image // Displays the loaded image.
                     .resizable()
@@ -19,7 +20,9 @@ struct ListImage: View {
             } else if phase.error != nil {
                 Color.red // Indicates an error.
             } else {
-                Color.gray // Acts as a placeholder.
+                Image("default") // Acts as a placeholder.
+                    .resizable()
+                    .scaledToFill()
             }
         }
         .frame(width: 107, height: 80)
