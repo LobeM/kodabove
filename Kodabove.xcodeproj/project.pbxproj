@@ -15,6 +15,7 @@
 		BDB3848328E0D357000C3874 /* ListImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3848228E0D357000C3874 /* ListImage.swift */; };
 		BDB3848528E0D5A1000C3874 /* EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3848428E0D5A1000C3874 /* EventItem.swift */; };
 		BDB3848828E0FC85000C3874 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = BDB3848728E0FC85000C3874 /* CachedAsyncImage */; };
+		BDB3848A28E0FF1B000C3874 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3848928E0FF1B000C3874 /* Schedule.swift */; };
 		BDE2F1C428DED1840057B554 /* KodaboveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2F1C328DED1840057B554 /* KodaboveApp.swift */; };
 		BDE2F1C628DED1840057B554 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2F1C528DED1840057B554 /* ContentView.swift */; };
 		BDE2F1C828DED1890057B554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE2F1C728DED1890057B554 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		BDB3847F28E09EB9000C3874 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		BDB3848228E0D357000C3874 /* ListImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListImage.swift; sourceTree = "<group>"; };
 		BDB3848428E0D5A1000C3874 /* EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItem.swift; sourceTree = "<group>"; };
+		BDB3848928E0FF1B000C3874 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		BDE2F1C028DED1840057B554 /* Kodabove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kodabove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE2F1C328DED1840057B554 /* KodaboveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodaboveApp.swift; sourceTree = "<group>"; };
 		BDE2F1C528DED1840057B554 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				BDB3847F28E09EB9000C3874 /* Event.swift */,
+				BDB3848928E0FF1B000C3874 /* Schedule.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				BDB3847628E0208B000C3874 /* ScheduleView.swift in Sources */,
 				BDE2F1C428DED1840057B554 /* KodaboveApp.swift in Sources */,
 				BDB3847428E02055000C3874 /* EventsView.swift in Sources */,
+				BDB3848A28E0FF1B000C3874 /* Schedule.swift in Sources */,
 				BDB3848528E0D5A1000C3874 /* EventItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
