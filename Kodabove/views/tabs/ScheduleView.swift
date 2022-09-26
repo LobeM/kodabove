@@ -11,13 +11,16 @@ struct ScheduleView: View {
     @State var schedules = [Schedule]()
     
     var body: some View {
-        List(schedules) { schedule in
-            ScheduleItem(schedule: schedule)
-        }
-        .onAppear {
-            NetworkManager().getSchedules { (events) in
-                self.schedules = events
+        NavigationView {
+            List(schedules) { schedule in
+                ScheduleItem(schedule: schedule)
             }
+            .onAppear {
+                NetworkManager().getSchedules { (events) in
+                    self.schedules = events
+                }
+            }
+            .navigationTitle("Schedules")
         }
     }}
 

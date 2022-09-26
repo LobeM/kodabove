@@ -11,27 +11,29 @@ struct EventItem: View {
     var event: Event
     
     var body: some View {
-        HStack {
-            ListImage(imageUrl: event.imageUrl)
-            
-            VStack(alignment: .leading) {
-                Text(event.title)
-                    .font(.headline)
-                    .fontWeight(.bold)
+        NavigationLink(destination: PlaybackView(event: event)) {
+            HStack {
+                ListImage(imageUrl: event.imageUrl)
                 
-                Text(event.subtitle)
-                    .font(.subheadline)
-                    .fontWeight(.medium)
-                    .padding(.bottom)
+                VStack(alignment: .leading) {
+                    Text(event.title)
+                        .font(.headline)
+                        .fontWeight(.bold)
+                    
+                    Text(event.subtitle)
+                        .font(.subheadline)
+                        .fontWeight(.medium)
+                        .padding(.bottom)
+                    
+                    Text(event.date)
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                }
                 
-                Text(event.date)
-                    .font(.caption)
-                    .foregroundColor(.gray)
+                Spacer()
             }
-            
-            Spacer()
+            .frame(height: 80)
         }
-        .frame(height: 80)
     }
 }
 

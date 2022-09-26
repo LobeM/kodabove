@@ -11,13 +11,16 @@ struct EventsView: View {
     @State var events = [Event]()
     
     var body: some View {
-        List(events) { event in
-            EventItem(event: event)
-        }
-        .onAppear {
-            NetworkManager().getEvents { (events) in
-                self.events = events
+        NavigationView {
+            List(events) { event in
+                EventItem(event: event)
             }
+            .onAppear {
+                NetworkManager().getEvents { (events) in
+                    self.events = events
+                }
+            }
+            .navigationTitle("Events")
         }
     }
 }
