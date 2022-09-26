@@ -15,7 +15,7 @@ struct EventsView: View {
             EventItem(event: event)
         }
         .onAppear {
-            apiCall().getEvents { (events) in
+            NetworkManager().getEvents { (events) in
                 self.events = events
             }
         }

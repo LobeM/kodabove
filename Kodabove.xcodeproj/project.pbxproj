@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		BDB3847428E02055000C3874 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3847328E02055000C3874 /* EventsView.swift */; };
 		BDB3847628E0208B000C3874 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3847528E0208B000C3874 /* ScheduleView.swift */; };
-		BDB3847A28E02149000C3874 /* ScheduleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3847928E02149000C3874 /* ScheduleItemView.swift */; };
 		BDB3847E28E022D8000C3874 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3847D28E022D8000C3874 /* MainView.swift */; };
 		BDB3848028E09EB9000C3874 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3847F28E09EB9000C3874 /* Event.swift */; };
 		BDB3848328E0D357000C3874 /* ListImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3848228E0D357000C3874 /* ListImage.swift */; };
 		BDB3848528E0D5A1000C3874 /* EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3848428E0D5A1000C3874 /* EventItem.swift */; };
 		BDB3848828E0FC85000C3874 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = BDB3848728E0FC85000C3874 /* CachedAsyncImage */; };
 		BDB3848A28E0FF1B000C3874 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3848928E0FF1B000C3874 /* Schedule.swift */; };
+		BDB3849028E10134000C3874 /* APICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3848F28E10134000C3874 /* APICalls.swift */; };
+		BDB3849228E18518000C3874 /* ScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3849128E18518000C3874 /* ScheduleItem.swift */; };
 		BDE2F1C428DED1840057B554 /* KodaboveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2F1C328DED1840057B554 /* KodaboveApp.swift */; };
 		BDE2F1C628DED1840057B554 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2F1C528DED1840057B554 /* ContentView.swift */; };
 		BDE2F1C828DED1890057B554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE2F1C728DED1890057B554 /* Assets.xcassets */; };
@@ -45,12 +46,13 @@
 /* Begin PBXFileReference section */
 		BDB3847328E02055000C3874 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		BDB3847528E0208B000C3874 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
-		BDB3847928E02149000C3874 /* ScheduleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItemView.swift; sourceTree = "<group>"; };
 		BDB3847D28E022D8000C3874 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BDB3847F28E09EB9000C3874 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		BDB3848228E0D357000C3874 /* ListImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListImage.swift; sourceTree = "<group>"; };
 		BDB3848428E0D5A1000C3874 /* EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItem.swift; sourceTree = "<group>"; };
 		BDB3848928E0FF1B000C3874 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		BDB3848F28E10134000C3874 /* APICalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICalls.swift; sourceTree = "<group>"; };
+		BDB3849128E18518000C3874 /* ScheduleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItem.swift; sourceTree = "<group>"; };
 		BDE2F1C028DED1840057B554 /* Kodabove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kodabove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE2F1C328DED1840057B554 /* KodaboveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodaboveApp.swift; sourceTree = "<group>"; };
 		BDE2F1C528DED1840057B554 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,8 +116,8 @@
 		BDB3847228E01FCB000C3874 /* listItems */ = {
 			isa = PBXGroup;
 			children = (
-				BDB3847928E02149000C3874 /* ScheduleItemView.swift */,
 				BDB3848428E0D5A1000C3874 /* EventItem.swift */,
+				BDB3849128E18518000C3874 /* ScheduleItem.swift */,
 			);
 			path = listItems;
 			sourceTree = "<group>";
@@ -144,6 +146,14 @@
 			path = misc;
 			sourceTree = "<group>";
 		};
+		BDB3848C28E1008B000C3874 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				BDB3848F28E10134000C3874 /* APICalls.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
 		BDE2F1B728DED1840057B554 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +177,7 @@
 		BDE2F1C228DED1840057B554 /* Kodabove */ = {
 			isa = PBXGroup;
 			children = (
+				BDB3848C28E1008B000C3874 /* network */,
 				BDB3847C28E021E8000C3874 /* controllers */,
 				BDB3847B28E02194000C3874 /* models */,
 				BDB3847028E01EFD000C3874 /* views */,
@@ -340,7 +351,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDB3848028E09EB9000C3874 /* Event.swift in Sources */,
-				BDB3847A28E02149000C3874 /* ScheduleItemView.swift in Sources */,
 				BDB3848328E0D357000C3874 /* ListImage.swift in Sources */,
 				BDB3847E28E022D8000C3874 /* MainView.swift in Sources */,
 				BDE2F1C628DED1840057B554 /* ContentView.swift in Sources */,
@@ -348,7 +358,9 @@
 				BDE2F1C428DED1840057B554 /* KodaboveApp.swift in Sources */,
 				BDB3847428E02055000C3874 /* EventsView.swift in Sources */,
 				BDB3848A28E0FF1B000C3874 /* Schedule.swift in Sources */,
+				BDB3849228E18518000C3874 /* ScheduleItem.swift in Sources */,
 				BDB3848528E0D5A1000C3874 /* EventItem.swift in Sources */,
+				BDB3849028E10134000C3874 /* APICalls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

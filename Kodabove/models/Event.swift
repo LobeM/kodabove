@@ -21,20 +21,4 @@ struct EventResult: Codable {
 }
 
 
-class apiCall {
-    func getEvents(completion: @escaping([Event]) -> ()) {
-        guard let url = URL(string: "https://us-central1-dazn-sandbox.cloudfunctions.net/getEvents") else {
-            print("API not found")
-            return
-        }
-        
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            let events = try! JSONDecoder().decode([Event].self, from: data!)
-            
-            DispatchQueue.main.async {
-                completion(events)
-            }
-        }
-        .resume()
-    }
-}
+
