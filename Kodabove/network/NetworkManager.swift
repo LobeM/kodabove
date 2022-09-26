@@ -1,8 +1,8 @@
 //
-//  APICalls.swift
+//  NetworkManager.swift
 //  Kodabove
 //
-//  Created by Lobe Musonda on 9/25/22.
+//  Created by Lobe Musonda on 9/26/22.
 //
 
 import Foundation
@@ -26,7 +26,7 @@ class NetworkManager {
         .resume()
     }
     
-    func getEvents(completion: @escaping([Schedule]) -> ()) {
+    func getSchedules(completion: @escaping([Schedule]) -> ()) {
         guard let url = URL(string: "\(baseUrl)/getSchedule") else {
             print("API not found")
             return

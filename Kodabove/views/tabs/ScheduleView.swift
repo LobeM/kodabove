@@ -8,10 +8,18 @@
 import SwiftUI
 
 struct ScheduleView: View {
+    @State var schedules = [Schedule]()
+    
     var body: some View {
-        Text("Schedule Tab")
-    }
-}
+        List(schedules) { schedule in
+            ScheduleItem(schedule: schedule)
+        }
+        .onAppear {
+            NetworkManager().getSchedules { (events) in
+                self.schedules = events
+            }
+        }
+    }}
 
 struct ScheduleView_Previews: PreviewProvider {
     static var previews: some View {

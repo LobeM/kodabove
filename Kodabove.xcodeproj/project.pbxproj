@@ -15,8 +15,8 @@
 		BDB3848528E0D5A1000C3874 /* EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3848428E0D5A1000C3874 /* EventItem.swift */; };
 		BDB3848828E0FC85000C3874 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = BDB3848728E0FC85000C3874 /* CachedAsyncImage */; };
 		BDB3848A28E0FF1B000C3874 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3848928E0FF1B000C3874 /* Schedule.swift */; };
-		BDB3849028E10134000C3874 /* APICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3848F28E10134000C3874 /* APICalls.swift */; };
 		BDB3849228E18518000C3874 /* ScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3849128E18518000C3874 /* ScheduleItem.swift */; };
+		BDB3849428E186FC000C3874 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3849328E186FC000C3874 /* NetworkManager.swift */; };
 		BDE2F1C428DED1840057B554 /* KodaboveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2F1C328DED1840057B554 /* KodaboveApp.swift */; };
 		BDE2F1C628DED1840057B554 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2F1C528DED1840057B554 /* ContentView.swift */; };
 		BDE2F1C828DED1890057B554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE2F1C728DED1890057B554 /* Assets.xcassets */; };
@@ -51,8 +51,8 @@
 		BDB3848228E0D357000C3874 /* ListImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListImage.swift; sourceTree = "<group>"; };
 		BDB3848428E0D5A1000C3874 /* EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItem.swift; sourceTree = "<group>"; };
 		BDB3848928E0FF1B000C3874 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
-		BDB3848F28E10134000C3874 /* APICalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICalls.swift; sourceTree = "<group>"; };
 		BDB3849128E18518000C3874 /* ScheduleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItem.swift; sourceTree = "<group>"; };
+		BDB3849328E186FC000C3874 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BDE2F1C028DED1840057B554 /* Kodabove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kodabove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE2F1C328DED1840057B554 /* KodaboveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodaboveApp.swift; sourceTree = "<group>"; };
 		BDE2F1C528DED1840057B554 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 		BDB3848C28E1008B000C3874 /* network */ = {
 			isa = PBXGroup;
 			children = (
-				BDB3848F28E10134000C3874 /* APICalls.swift */,
+				BDB3849328E186FC000C3874 /* NetworkManager.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -354,13 +354,13 @@
 				BDB3848328E0D357000C3874 /* ListImage.swift in Sources */,
 				BDB3847E28E022D8000C3874 /* MainView.swift in Sources */,
 				BDE2F1C628DED1840057B554 /* ContentView.swift in Sources */,
+				BDB3849428E186FC000C3874 /* NetworkManager.swift in Sources */,
 				BDB3847628E0208B000C3874 /* ScheduleView.swift in Sources */,
 				BDE2F1C428DED1840057B554 /* KodaboveApp.swift in Sources */,
 				BDB3847428E02055000C3874 /* EventsView.swift in Sources */,
 				BDB3848A28E0FF1B000C3874 /* Schedule.swift in Sources */,
 				BDB3849228E18518000C3874 /* ScheduleItem.swift in Sources */,
 				BDB3848528E0D5A1000C3874 /* EventItem.swift in Sources */,
-				BDB3849028E10134000C3874 /* APICalls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
