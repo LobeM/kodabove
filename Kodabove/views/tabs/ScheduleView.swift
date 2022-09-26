@@ -8,17 +8,12 @@
 import SwiftUI
 
 struct ScheduleView: View {
-    @State var schedules = [Schedule]()
+    @ObservedObject var networkManager = NetworkManager()
     
     var body: some View {
         NavigationView {
-            List(schedules) { schedule in
+            List(networkManager.schedules, id: \.id) { schedule in
                 ScheduleItem(schedule: schedule)
-            }
-            .onAppear {
-                NetworkManager().getSchedules { (events) in
-                    self.schedules = events
-                }
             }
             .navigationTitle("Schedules")
         }

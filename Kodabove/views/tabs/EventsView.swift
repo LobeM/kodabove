@@ -8,17 +8,12 @@
 import SwiftUI
 
 struct EventsView: View {
-    @State var events = [Event]()
+    @ObservedObject var networkManager = NetworkManager()
     
     var body: some View {
         NavigationView {
-            List(events) { event in
+            List(networkManager.events, id: \.id) { event in
                 EventItem(event: event)
-            }
-            .onAppear {
-                NetworkManager().getEvents { (events) in
-                    self.events = events
-                }
             }
             .navigationTitle("Events")
         }
