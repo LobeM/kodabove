@@ -6,30 +6,43 @@
 //
 
 import XCTest
+@testable import Kodabove
 
 final class KodaboveTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    private var networkManager: NetworkManager!
+    
+    override func setUp() {
+        networkManager = NetworkManager()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        networkManager = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+    
+    func test_with_sucessful_response_events_array_is_set() {
+        XCTAssertTrue(networkManager.isLoading, "Data should be loading on initialization")
+        
+        let expectation = XCTestExpectation()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            XCTAssertTrue(self.networkManager.events.count > 0)
+            
+            expectation.fulfill()
         }
+        
+        defer {
+            XCTAssertFalse(networkManager.isLoading, "No data should be loading")
+        }
+        wait(for: [expectation], timeout: 5.0)
     }
-
+    
+    func test_with_sucessful_response_schedule_array_is_set() {
+        let expectation = XCTestExpectation()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            XCTAssertTrue(self.networkManager.schedules.count > 0)
+            
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 5.0)
+    }
 }
