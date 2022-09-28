@@ -47,7 +47,8 @@ class NetworkManager: ObservableObject {
             let events = try! JSONDecoder().decode([Event].self, from: data)
             
             DispatchQueue.main.async {
-                self.events = events
+                let sortedEvents = events.sorted(by: { $0.dateTime.compare($1.dateTime) == .orderedAscending })
+                self.events = sortedEvents
                 self.isLoading = false
             }
         }
@@ -72,7 +73,8 @@ class NetworkManager: ObservableObject {
             let events = try! JSONDecoder().decode([Event].self, from: data)
             
             DispatchQueue.main.async {
-                self.events = events
+                let sortedEvents = events.sorted(by: { $0.dateTime.compare($1.dateTime) == .orderedAscending })
+                self.events = sortedEvents
                 self.isFetching = false
             }
         }
@@ -90,7 +92,8 @@ class NetworkManager: ObservableObject {
             let schedules = try! JSONDecoder().decode([Schedule].self, from: data)
             
             DispatchQueue.main.async {
-                self.schedules = schedules
+                let sortedSchedules = schedules.sorted(by: { $0.dateTime.compare($1.dateTime) == .orderedAscending })
+                self.schedules = sortedSchedules
             }
         }
         .resume()

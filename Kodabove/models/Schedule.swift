@@ -13,6 +13,8 @@ struct Schedule: Codable, Identifiable {
     var subtitle: String
     var date: String
     var imageUrl: String
+    
+    var dateTime: Date
 }
 
 extension Schedule {
@@ -35,12 +37,15 @@ extension Schedule {
             
             if let newDate = date {
                 self.date = relativeDateFormatter.string(from: newDate)
+                self.dateTime = newDate
             } else {
                 self.date = ""
+                self.dateTime = Date()
             }
             
         } else {
             self.date = ""
+            self.dateTime = Date()
         }
         
         self.imageUrl = try container.decode(String.self, forKey: .imageUrl)
