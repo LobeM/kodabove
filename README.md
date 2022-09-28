@@ -3,7 +3,7 @@
 This is  my submission to the iOS coding assessment written with Swift using SwiftUI. I am looking foward to the interview to discuss the code.
 
 ### Functional Requirements
-:white_check_mark Two bottom navigation tabs for events and schedule
+:white_check_mark: Two bottom navigation tabs for events and schedule
 
 ### Output Requirements
 :white_check_mark: Events screen presenting a list of events from API
