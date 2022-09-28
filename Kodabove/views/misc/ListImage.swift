@@ -12,7 +12,7 @@ struct ListImage: View {
     var imageUrl: String
     
     var body: some View {
-        CachedAsyncImage(url: URL(string: imageUrl)){ phase in
+        AsyncImage(url: URL(string: imageUrl)){ phase in
             if let image = phase.image {
                 image // Displays the loaded image.
                     .resizable()

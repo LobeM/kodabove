@@ -23,6 +23,7 @@ struct PlaybackView: View {
             
             Spacer()
         }
+        .navigationTitle("Playback")
     }
 }
 

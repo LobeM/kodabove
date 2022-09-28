@@ -12,10 +12,17 @@ struct ScheduleView: View {
     
     var body: some View {
         NavigationView {
-            List(networkManager.schedules, id: \.id) { schedule in
-                ScheduleItem(schedule: schedule)
+            ZStack {
+                ScrollView {
+                    LazyVStack(alignment: .leading) {
+                        ForEach(networkManager.schedules, id: \.id) { schedule in
+                            ScheduleItem(schedule: schedule)
+                        }
+                    }
+                    .accessibilityIdentifier("scheduleList")
+                }
             }
-            .navigationTitle("Schedules")
+            .navigationTitle("Schedule")
         }
     }}
 

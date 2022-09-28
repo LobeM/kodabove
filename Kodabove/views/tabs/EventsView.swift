@@ -12,8 +12,27 @@ struct EventsView: View {
     
     var body: some View {
         NavigationView {
-            List(networkManager.events, id: \.id) { event in
-                EventItem(event: event)
+            ZStack {
+                if networkManager.isLoading {
+                    ProgressView()
+                } else {
+                    ScrollView {
+                        LazyVStack(alignment: .leading) {
+                            ForEach(networkManager.events, id: \.id) { event in
+                                EventItem(event: event)
+                            }
+                        }
+                        .accessibilityIdentifier("eventsList")
+                    }
+                    .refreshable {
+                        networkManager.fetchEvents()
+                    }
+                    .overlay {
+                        if networkManager.isFetching {
+                            ProgressView()
+                        }
+                    }
+                }
             }
             .navigationTitle("Events")
         }
